@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>#espalhamorpelomundo</title>
+</head>
+<body>
+    <div class="home">
+        <div class="screen-home">
+            <div class="title-page">#espalhamorpelomundo</div>
+
+            <div class="box-btn-input">
+                <input class="userNameInput" type="text" placeholder="Entre com o seu nome">
+                <button  onclick="btnLogin()" class="btn-login">Entrar na página</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="box-main screenHiden">
+        <main>
+            <header class="top">
+                <nav class="box">
+                    <h1>#espalhamorpelomundo</h1>
+                    <div class="box-log">
+                        <span class="user">Rafa simas</span>
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+                </nav>
+            </header>
+    
+            <section id="hero">
+                <div class="flex-grid">
+                    <div class="box-text">
+                        <h2>Sua vida mais perfumada </h2>
+                        <p>Essencias aromatizantes para melhorar o seu dia</p>
+                        <a href="#mais">
+                            <button>Veja mais</button>
+                        </a>
+                    </div>
+                    <div class="box-image">
+                        <img src="https://images.unsplash.com/photo-1571510811967-ad6b78c86ffe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=429&q=80" alt="">
+                    </div>
+                </div>
+            </section>
+    
+            <section id="mais">
+                <div class="box-mais">
+                    <div class="box-mais-text">
+                        <h2>
+                            Nossas fragrâncias foram desenvolvidas com alta tecnologia para lhe proporcionar todo conforto necessário.
+                        </h2>
+                    </div>
+                    <div class="box-mais-image">
+                        <img src="./img/frascos.svg" alt="">
+                    </div>
+                </div>
+                <div class="box-mais">
+                    <div class="box-mais-image">
+                        <img src="./img/embalagem.svg" alt="">
+                    </div>
+                    <div class="box-mais-text">
+                        <h2>
+                            Nosso cuidado com o meio ambiente é levado a sério e com isso, desenvolvemos embalagens na ajuda a sua preservação.
+                        </h2>
+                    </div>
+                    
+                </div>
+                <div class="box-mais">
+                    <div class="box-mais-text">
+                        <h2>
+                            Também temos o frasco retornável, nossa intensão é diminuir o resíduo e icentival a sua economia.
+                        </h2>
+                    </div>
+                    
+                    <div class="box-mais-image">
+                        <img src="./img/lançamento.svg" alt="">
+                    </div>
+                </div>
+            </section>
+    
+            <div class="arrow" onclick="loja()">
+                <span>Loja</span>
+                    <ion-icon name="bag-handle-outline"></ion-icon>
+            </div>
+        </main>
+    </div>
+
+    <section class="screenHiden" id="loja">
+        <header class="top">
+            <nav class="box">
+                <h1>#espalhamorpelomundo</h1>
+                <div class="box-log">
+                    <span class="user">Desenvolvido por <a href="https://rafaelsimasprogramador.netlify.app/" target="_blank">Rafael Simas</a></span>
+                    
+                </div>
+            </nav>
+        </header>
+        <div>
+            <div class="title-section">DIFUSOR DE VIDRO (10ml)</div>
+            <!-- ==============CARD DIFUSORES=================== -->
+            <div class="options difusores">
+                <div class="option peppermint" onclick="selectDifusores('.peppermint', 'PEPPERMINT Hortelã-pimenta', 15.00)">
+                    <img src="./img3/peppermintDifusor.svg" alt="">
+                    <div class="title">PEPPERMINT (Hortelã-pimenta)</div>
+                    <div class="description">
+                        Para dor de cabeça e enxaqueca, sinusite, rinite e asma, perda de olfato, mau hálito, febre queimadura de sol, energia, foco e concentração 
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+                <div class="option lavander" onclick="selectDifusores('.lavander', 'LAVENDER Lavanda', 15.00)">
+                    <img src="./img3/lavanderDifusor.svg" alt="">
+                    <div class="title">LAVENDER (Lavanda)</div>
+                    <div class="description">
+                        Para sono reparador,ansiedade e estresse  picadas de insetos, queimaduras, alergias e cólicas.
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+                <div class="option lemon" onclick="selectDifusores('.lemon', 'LEMON Limão siciliano', 15.00)">
+                    <img src="./img3/lemonDifusor.svg" alt="">
+                    <div class="title">LEMON (Limão siciliano)</div>
+                    <div class="description">
+                        Para limpeza do sistema  linfático, rins e vesícula biliar, retenção  de líquido, intestino pres, azia e refluxo,  congestão e muco, reumatismo, gota e artrite.
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+            </div>
+        
+            <div class="title-section">SPRAY TRANQUILIZANTE (15ml)</div>
+            
+            <!-- ==============CARD SPRAY=================== -->
+            <div class="options spray">
+                <div class="option peppermintspray" onclick="selectSpray('.peppermintspray', 'PEPPERMINT Hortelã-pimenta', 10.00)">
+                    <img src="./img3/peppermintSpray.svg" alt="">
+                    <div class="title">PEPPERMINT (Hortelã-pimenta)</div>
+                    <div class="description">
+                        Para dor de cabeça e enxaqueca, sinusite, rinite e asma, perda de olfato, mau hálito, febre queimadura de sol, energia, foco e concentração 
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+                <div class="option lavanderspray" onclick="selectSpray('.lavanderspray', 'LAVENDER Lavanda', 10.00)">
+                    <img src="./img3/lavanderSpray.svg" alt="">
+                    <div class="title">LAVENDER (Lavanda)</div>
+                    <div class="description">
+                        Para sono reparador,ansiedade e estresse  picadas de insetos, queimaduras, alergias e cólicas.
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+                <div class="option lemonspray" onclick="selectSpray('.lemonspray', 'LEMON Limão siciliano', 10.00)">
+                    <img src="./img3/lemonSpray.svg" alt="">
+                    <div class="title">LEMON (Limão siciliano)</div>
+                    <div class="description">
+                        Para limpeza do sistema  linfático, rins e vesícula biliar, retenção  de líquido, intestino pres, azia e refluxo,  congestão e muco, reumatismo, gota e artrite.
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+            </div>
+        
+            <div class="title-section">REFIL (5ml)</div>
+        
+            <!-- ==============CARD REFIL=================== -->
+            <div class="options refil">
+                <div class="option peppermintrefil" onclick="selectRefil('.peppermintrefil', 'PEPPERMINT Hortelã-pimenta', 5.00)">
+                    <img src="./img3/peppermintRefil.svg" alt="">
+                    <div class="title">PEPPERMINT (Hortelã-pimenta)</div>
+                    <div class="description">
+                        Para dor de cabeça e enxaqueca, sinusite, rinite e asma, perda de olfato, mau hálito, febre queimadura de sol, energia, foco e concentração 
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+                <div class="option lavanderrefil" onclick="selectRefil('.lavanderrefil', 'AVENDER - Lavanda', 5.00)">
+                    <img src="./img3/lavanderRefil.svg" alt="">
+                    <div class="title">AVENDER (Lavanda)</div>
+                    <div class="description">
+                        Para sono reparador,ansiedade e estresse  picadas de insetos, queimaduras, alergias e cólicas.
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+                <div class="option lemonrefil" onclick="selectRefil('.lemonrefil', 'Limão siciliano', 5.00)">
+                    <img src="./img3/lemonRefil.svg" alt="">
+                    <div class="title">LEMON (Limão siciliano)</div>
+                    <div class="description">
+                        Para limpeza do sistema  linfático, rins e vesícula biliar, retenção  de líquido, intestino pres, azia e refluxo,  congestão e muco, reumatismo, gota e artrite.
+                    </div>
+                    <div class="price">R$15</div>
+                </div>
+            </div>
+            <footer>
+                <a class="fazer-pedido" href="#">Fazer o pedido</a>
+            </footer>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>
