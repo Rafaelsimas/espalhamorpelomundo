@@ -248,6 +248,9 @@ main{
 .arrow span{
    color: black;
    font-family: var(--font);
+   background: rgba(255, 166, 0, 0.521);
+   border-radius: 8px;
+   padding: 0.3rem;
 }
 .arrow{
     position: fixed;
@@ -255,7 +258,7 @@ main{
     right: 0;
     display: flex;
     align-items: center;
-    gap: 0.2rem;
+    gap: 0.1rem;
    
 }
 
